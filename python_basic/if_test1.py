@@ -26,7 +26,7 @@ else:
     print("걸어가라")
 
 '''
-
+'''
 pocket = ['paper', 'cellphone']
 card = True
 if 'money' in pocket:
@@ -36,3 +36,18 @@ else:
         print("택시를 타고 가라")
     else:
         print("걸어가라")
+'''
+
+
+a = "Life is too short, you need python"
+if 'wife' in a:
+    print("wife")
+elif 'python' in a and 'you' not in a:
+    print("python")
+elif 'shirt' not in a:
+    print("shirt")
+elif 'need' in a:
+    print("need")
+else:
+    print("none")
+    
