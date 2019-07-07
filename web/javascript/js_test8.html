@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <script type="text/javascript">
+    function mouseIn(elem){
+    elem.style.border = "2px solid red";
+    elem.style.fontSize = "30px";
+    }
+    function mouseOut(elem){
+    elem.style.border="2px solid blue";
+    elem.style.fontSize = "16px";
+    }
+    </script>
+    </head>
+<body>
+    <div style="background-color:lightblue"
+    onmouseover="mouseIn(this)" onmouseout="mouseOut(this)">마우스 이벤트</div>
+<br>
+    <h1 id="title">마우스 이벤트</h1>
+    <a href="#" id="btn"><img src="../img/cat1.jfif"></a>
+    <p id="img_src"></p>
+        <script>
+            var btn = document.getElementById("btn");
+            var s = document.getElementById("img_src");
+                btn.onmouseover = function() {
+                document.getElementById("title").innerHTML = "마우스 오버";
+                btn.firstChild.src="../img/cat2.jfif";
+                s.innerHTML = btn.firstChild.src;
+                }
+                btn.onmouseout = function(){
+                document.getElementById("title").innerHTML = "마우스 아웃";
+                btn.firstChild.src="../img/cat1.jfif";
+                s.innerHTML = btn.firstChild.src;
+                }
+        </script>
+</body>
+</html>
+​
