@@ -1,0 +1,30 @@
+{% extends 'default.html' %}
+{% block title %}
+Main Page
+{% endblock %}
+
+{% block contents %}
+  <form action="/insert" method="POST">
+    <div class="form-group">
+      <label for="userid">사용자 아이디</label>
+      <input type="text" class="form-control" id="userid" name="userid" aria-describedby="useridhelp" placeholder="아이디를 입력하세요">
+      <small id="useridhelp" class="form-text text-muted">아이디는 최소 5자.</small>
+    </div>
+    <div class="form-group">
+      <label for="email">이메일 입력</label>
+      <input type="email" class="form-control" id="email1" name="email1" aria-describedby="emailHelp" placeholder="이메일을 입력하세요.">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="useradress">사용자 주소</label>
+      <input type="text" class="form-control" id="useradress" name="useradress" aria-describedby="adresshelp" placeholder="주소를 입력하세요.">
+    
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="Password" name="Password" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+{% endblock %}
